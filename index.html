@@ -1,29 +1,57 @@
 <html>
 
 <head>
-  <title>Realtime Filter  Webapp using PoseNet Neural Network</title>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <style type="text/css">
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+  	border:1px solid black;
+  }
+  canvas{
+    animation-name:example;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    from{box-shadow: 1px 1px 38px rgb(0, 217, 255);}
+    to{box-shadow: 1px 1px 38px rgb(255, 0, 234);}
+    
+}
+
+  </style>
 </head>
 
-<body background="https://st2.depositphotos.com/4006379/10745/v/950/depositphotos_107453214-stock-illustration-cute-colorful-cartoon-lipstick-seamless.jpg">
+<body background="https://i.pinimg.com/originals/e5/89/95/e5899572ecace2b0895b36db7703a001.gif">
+<div class="container">
   <center>
-    <h3 class="btn btn-info">Realtime Filter</h3>
-    <br><br>
-    <button onclick="take_snapshot();" class="btn btn-danger">Take Snapshot</button>
-
-  </center>
+	<h3 class="btn btn-primary">Introduction to p5.js</h3>
+	<hr>
+  <br><br>
+  <button onclick="Filter1();" class="btn btn-info">Frame 1</button>
+  <button onclick="Filter2();" class="btn btn-danger">Frame 2</button>
+  <button onclick="Filter3();" class="btn btn-warning">Frame 3</button>
+  <br><br>
+  <input id="color_name" placeholder="Enter Filter Color: ">
+  <br><br>
+  <button onclick="filter_tint();" class="btn btn-warning">Apply Filter</button>
+  <br><br>
+  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
+</center>
+</div>
 
 <script src="main.js"></script>
 </body>
 
 </html>
-
 
