@@ -1,46 +1,29 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Intro p5.js</title>
+  <title>Realtime Filter  Webapp using PoseNet Neural Network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <style type="text/css">
-  h3
-  {
-    font-size: 25px !important;
-  }
-  canvas {
-  	border:1px solid black;
-  }
-  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
 </head>
 
-<body>
-<div class="container">
+<body background="https://st2.depositphotos.com/4006379/10745/v/950/depositphotos_107453214-stock-illustration-cute-colorful-cartoon-lipstick-seamless.jpg">
   <center>
-	<h3 class="btn btn-primary">Introduction to p5.js</h3>
-	<hr>
-  <br><br>
-  <button onclick="Filter1();" class="btn btn-info">Frame 1</button>
-  <button onclick="Filter2();" class="btn btn-danger">Frame 2</button>
-  <button onclick="Filter3();" class="btn btn-warning">Frame 3</button>
-  <br><br>
-  <input id="color_name" placeholder="Enter Filter Color: ">
-  <br><br>
-  <button onclick="filter_tint();" class="btn btn-warning">Apply Filter</button>
-  <br><br>
-  <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button>
-</center>
-</div>
+    <h3 class="btn btn-info">Realtime Filter</h3>
+    <br><br>
+    <button onclick="take_snapshot();" class="btn btn-danger">Take Snapshot</button>
+
+  </center>
 
 <script src="main.js"></script>
 </body>
 
 </html>
+
 
